@@ -5,8 +5,9 @@ public class Main {
 
     public static void main(String[] args) {
         // Diffie-Hellman key exchange
-        Main a = new Main(23, 6, 15);
-        Main b = new Main(23, 6, 6);
+        // a can be any random number
+        Main a = new Main(23, 6, 152783);
+        Main b = new Main(23, 6, 6342343);
         a.key = a.priv(b.pub());
         b.key = b.priv(a.pub());
 
